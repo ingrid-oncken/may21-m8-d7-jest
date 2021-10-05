@@ -17,7 +17,8 @@ describe("Testing the testing environment", () => {
 // perform some TDD
 
 describe("Testing the server", () => {
-    // make sure there is an endpoint that is a /test endpoint which will return 200 and a JSON object like the following:
+    // make sure there is an endpoint that is a /test endpoint which will return 200 and a JSON object 
+    //like the following:
     // { message: "Test success" }
 
     beforeAll(done => {
