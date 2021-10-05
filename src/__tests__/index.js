@@ -29,15 +29,15 @@ describe("Testing the server", () => {
             })
     })
 
-    // afterAll(done => {
-    //     mongoose.connection.dropDatabase().then(() => {
-    //         console.log("Test DB dropped")
+    afterAll(done => {
+        mongoose.connection.dropDatabase().then(() => {
+            console.log("Test DB dropped")
 
-    //         mongoose.connection.close().then(() => {
-    //             done()
-    //         })
-    //     })
-    // })
+            mongoose.connection.close().then(() => {
+                done()
+            })
+        })
+    })
 
     // function checkResponse(body) {
     //     const expectation = {
