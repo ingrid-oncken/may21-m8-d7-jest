@@ -65,8 +65,8 @@ describe("Testing the server", () => {
     })
 
     const validProduct = {
-        name: 'iPhone 14',
-        price: 9900
+        name: 'iPhone 15',
+        price: 3000
     }
 
     it("should test that a POST /products is returning us a valid product", async () => {
