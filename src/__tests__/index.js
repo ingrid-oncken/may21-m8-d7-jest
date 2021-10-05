@@ -17,7 +17,8 @@ describe("Testing the testing environment", () => {
 // perform some TDD
 
 describe("Testing the server", () => {
-    // make sure there is an endpoint that is a /test endpoint which will return 200 and a JSON object like the following:
+    // make sure there is an endpoint that is a /test endpoint which will return 200 and a JSON object 
+    //like the following:
     // { message: "Test success" }
 
     beforeAll(done => {
@@ -28,15 +29,15 @@ describe("Testing the server", () => {
             })
     })
 
-    afterAll(done => {
-        mongoose.connection.dropDatabase().then(() => {
-            console.log("Test DB dropped")
+    // afterAll(done => {
+    //     mongoose.connection.dropDatabase().then(() => {
+    //         console.log("Test DB dropped")
 
-            mongoose.connection.close().then(() => {
-                done()
-            })
-        })
-    })
+    //         mongoose.connection.close().then(() => {
+    //             done()
+    //         })
+    //     })
+    // })
 
     // function checkResponse(body) {
     //     const expectation = {
